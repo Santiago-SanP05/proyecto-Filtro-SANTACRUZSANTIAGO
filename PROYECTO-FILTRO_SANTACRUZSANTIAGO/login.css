@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    animation: img 6s linear 0s infinite;
+    align-items: center;
+    min-height: 100vh;
+}
+.login{
+    position: relative;
+    display: flex;
+    gap: 10px;
+    justify-content:center;
+    flex-direction: column;
+    align-items:center;
+    width: 400px;
+    height: 500px;
+    box-shadow: 0 0 60px #000;
+}
+h2{
+    font-family: "halo", sans-serif;
+    font-size: 2.7em;
+    color: #0c00b7;
+    text-shadow: 0 10px 15px #0720fd73;
+    text-align: center;
+}
+.input-group{
+    position: relative;
+    width: 320px;
+    margin: 30px 0;
+}
+.input-group input{
+    width: 100%;
+    height: 40px;
+    font-size: 1em;
+    color:#1e3e3f;
+    padding: 0 10px 0 35px;
+    background:transparent;
+    border: 1px solid white;
+    outline: none;
+    border-radius: 5px;
+}
+.input-group input::placeholder{
+    color:rbga(255,255,255);
+}
+.input-group .icon{
+    position: absolute;
+    display: block;
+    left: 10px;
+    color:white;
+    font-size: 1.2em;
+    line-height: 45px;
+}
+.forgot-password a{
+    font-size: 1.2em;
+    color: #15a1ffbd;
+    text-decoration: none;
+}
+.btn{
+    padding: 0 25%;
+    color: white;
+    background: #000;
+}
+p{
+    font-size: 1.3em;
+    color:rgba(177, 189, 204, 0.966);
+}
+.registro-link{
+    text-decoration: none;
+    color: #666666;
+    font-weight: 600;
+}
+.return{
+    font-family: "halo outline", sans-serif;
+    font-size: 2em;
+    color: rgba(168, 168, 255, 0.705);
+    text-decoration: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes img{
+    0%{ background: url(/multimedia/imagenes/a-captivating-dark-themed-wallpaper-featuring-the--hl3WiV8lTxSufCem-2qzxQ-BFvNg75mSsSqqfaWu7XxXw.jpeg)no-repeat;
+    background-size: cover;
+    background-position: center;}
+    25%{ background: url(/multimedia/imagenes/a-captivating-wallpaper-featuring-the-master-chief-sAdMJ6ODQwmHnO-4ws2v9A-BFvNg75mSsSqqfaWu7XxXw.jpeg)no-repeat;
+        background-size: cover;
+        background-position: center;}
+    50%{ background: url(/multimedia/imagenes/a-striking-and-detailed-digital-illustration-of-ma-Q1StTKw4QHmFgiyFfruYog-djqFjzm1THKZuQOL2BK66Q.jpeg)no-repeat;
+        background-size: cover;
+        background-position: center;}
+    100%{ background: url(/multimedia/imagenes/a-stunning-dark-themed-wallpaper-featuring-the-mas-OrdCqIIRQjW58Gl_LvQ1AA-BFvNg75mSsSqqfaWu7XxXw.jpeg)no-repeat;
+        background-size: cover;
+        background-position: center;}
+}
+

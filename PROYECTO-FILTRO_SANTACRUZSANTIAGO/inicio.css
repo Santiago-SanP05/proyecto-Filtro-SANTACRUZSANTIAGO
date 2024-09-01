@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    left: 0;
+    position: relative;
+    background: black;
+    min-height: 100vh;
+    overflow: hidden;
+}
+.fondo{
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+}
+.navegador{
+    position: absolute;
+    background: red;
+    z-index: 100;
+    display: flex;
+    width: 10%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85%;
+
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 15%;
+}
+.logo .face{
+    margin-top: 2vh;
+    border-radius: 100%;
+    background: url(/multimedia/imagenes/d74a20c79f9a02ae7c4962e4ad1ec6ca.jpg);
+    background-position: center;
+    width: 69%;
+    height: 69%;
+    border: 2px solid white;
+}
+.list_nav a{
+    padding: 1vh 5vh 1vh 1vh;
+    text-decoration: none;
+    margin-bottom: 3.5vh;
+    display: flex;
+    justify-content: center;
+    color: white;
+    transition: .4s;
+}
+.list_nav a:hover, #active{
+color: #0070e0;
+border-right: 3px solid rgba(113, 133, 245, 0.432);
+text-shadow: 
+0px 5px 10px #afccff,
+0px 5px 10px #003692,
+0px 5px 10px #001c4c;
+}
+    
+.list_nav .small{
+    font-size: 1.4em;
+}
+.list_nav .small:hover{
+    font-size: 1.9em;
+}
+.list_nav .half{
+    font-size: 1.9em;
+}
+.list_nav .half:hover{
+    font-size: 2.3em;
+}
+.list_nav .big{
+    font-size: 2.3em;
+}
+.list_nav .big:hover{
+    font-size: 2.6em;
+}
+.container{
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+    height: 100%;
+    border: 2px sollid green;
+    z-index: 2;
+}
+.container .espacio{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    height: 100%;
+}
+.izqui{
+    margin: 10px;
+    display: flex;
+    width: 40%;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 1em;
+    color: white;
+}
+.izqui h1{
+    display: flex;
+    width: 100%;
+    height: 20%;
+    justify-content:flex-start;
+    align-items: flex-start;
+    font-size: 3em;
+    font-family: "halo", sans-serif;
+}
+.izqui h2{
+    font-family: "halo outline", sans-serif;
+    font-size: 1.5em;
+    margin-top: 20%;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.izqui p{
+    font-size: 1.2em;
+    width: 70%;
+    height: 40%;
+    overflow: hidden;
+}
+.container .dere{
+    margin-left: 10vh;
+    margin-top: 5vh;
+    width: 50%;
+    height: 88%;
+}
+.container .inicio nav{
+    background: transparent;
+    backdrop-filter: blur(20px);
+    margin: 5vh;
+    display: flex;
+    border: 2px solid rgba(255, 255, 255, 0.291);
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    width: 88%;
+    height: 10%;
+}
+.container .inicio nav .logo{
+    width: 30%;
+    height: 100%;
+    margin-left: 1vh;
+}
+.container .inicio nav .logo i{
+    font-size: 2em;
+    margin-right: 1vh;
+}
+.container .inicio nav a{
+    margin-right: 1vh;
+    height: 100%;
+    text-decoration: none;
+    color: #8fc7ff;
+    background: #0070e0;
+    padding: 0 10vh;
+}
+.inicio .segundo{
+    backdrop-filter: blur(20px);
+    margin: 5vh;
+    width: 88%;
+    height: 35vh;
+    border: 2px solid rgba(255, 255, 255, 0.284);
+    color: #afccff;
+}
+.inicio .segundo iframe{
+    margin: 2vh;
+}
+.inicio .segundo h2{
+    margin-left: 2vh;
+}
+.inicio .segundo h5{
+    margin-left: 2vh;
+}
+.inicio .tercero{
+    margin: 5vh;
+    width: 88%;
+    height: 27vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.inicio .tercero1{
+    width: 44%;
+    height: 100%;
+    border: 2px solid rgba(255, 255, 255, 0.257);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+}
+.inicio .tercero2{
+    width: 44%;
+    height: 100%;
+    border: 2px solid rgba(255, 255, 255, 0.277);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+}
+.todo{
+    display: block;
+}
+.c{
+    display: none;
+}
+@media (max-width: 850px){
+    .c{
+        display: block;
+        color: red;
+        font-family: "halo", sans-serif;
+    }
+    .todo{
+        display: none;
+    }
+}

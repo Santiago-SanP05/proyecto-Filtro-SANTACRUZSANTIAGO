@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/game.css">
+    <link href="https://fonts.cdnfonts.com/css/halo" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Game</title>
+</head>
+<section>
+    <div class="cara"></div>
+    <div class="navegador">
+        <div class="logo">
+            <a href="/main.html" class="face"></a>
+        </div>
+        <nav class="navbar">
+            <div class="list_nav">
+                <a href="/Game.html" id="active" class="small"><i class='bx bxs-joystick'></i></a>
+                <a href="/usuario.html" class="half" target="_blank"><i class='bx bxs-user'></i></a>
+                <a href="/inicio.html" class="big" ><i class='bx bxs-home'></i></a>
+                <a href="https://www.xbox.com/es-co/games/store/halo-the-master-chief-collection/9ntm9hxnlszx" class="half"
+                target="_blank"><i class='bx bxs-navigation'></i></a>
+                <a href="/historia.html" class="small" ><i class='bx bxs-book-alt'></i></i></a>
+            </div>
+        </nav>
+    </div>
+    <section  class="container">
+        <div id="contenedor" clas="contenedor-items"></div>
+        <!-- Carrito de Compras-->
+        <div class="carrito">
+            <div class="header-carrito">
+                <h2>Carrito</h2>
+            </div>
+
+            <div class="carrito-items">
+                <div class="carrito-item">
+                    <img src="./multimedia/imagenes/79824d8054186fb12fc7be043b4a081a.jpg" alt="img" width="80px">
+                    <div class="carrito-item-detalles">
+                        <span class="carrrito-item-titulo">Halo 1</span>
+                        <div class="selector-cantidad">
+                            <i class='bx bx-minus restar-cantidad'></i>
+                            <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                            <i class='bx bx-plus-medical sumar-cantidad' ></i>
+                        </div>
+                        <span class="carrito-item-precio">$15.000</span>
+                    </div>
+                    <span class="btn-eliminar">
+                        <i class='bx bxs-trash' ></i>
+                    </span>
+                </div>
+
+                <div class="carrito-item">
+                    <img src="./multimedia/imagenes/2bcd7f224446f8a95e3f10744738e9a8.jpg" alt="img" width="80px">
+                    <div class="carrito-item-detalles">
+                        <span class="carrrito-item-titulo">Halo Nose</span>
+                        <div class="selector-cantidad">
+                            <i class='bx bx-minus restar-cantidad'></i>
+                            <input type="text" value="2" class="carrito-item-cantidad" disabled>
+                            <i class='bx bx-plus-medical sumar-cantidad' ></i>
+                        </div>
+                        <span class="carrito-item-precio">$30.000</span>
+                    </div>
+                    <span class="btn-eliminar">
+                        <i class='bx bxs-trash' ></i>
+                    </span>
+                </div>
+
+                <div class="carrito-total">
+                    <div class="fila">
+                        <strong>Tu total</strong>
+                        <span class="carrito-precio-total">
+                            $120.000
+                        </span>
+                    </div>
+                    <button class="btn-pagar"> Pagar <i class='bx bxs-shopping-bag-alt'></i></button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <script src="./game.js"></script>
+    <script src="./game2.js"></script>
+</body>
+</html>
